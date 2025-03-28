@@ -71,11 +71,13 @@
 .post-button:hover {
   background-color: #0056b3;
 
-} 
+}
+
 .logout {
   background-color: rgb(227, 91, 91);
-} 
-.login{
+}
+
+.login {
   background-color: lightgreen;
 }
 
@@ -214,72 +216,82 @@
 
 .search-button:hover {
   background-color: #0056b3;
-} 
+}
 
 
 
 
-@media (max-width: 900px) {  
+@media (max-width: 900px) {
 
   .filter-section {
     padding-left: 10px;
-    padding-right: 1opx;
-  
+    padding-right: 10px;
+
   }
-  
+
   .filter-section-div {
-    margin: 5px;
+    margin: 3px;
   }
-  
+
   .filter-section-div-section {
     font-size: 10px;
   }
-  
+
   .btn1 {
     margin-top: 8px;
     padding: 5px;
-    font-size: 10px; 
+    font-size: 9px;
     width: 60px;
-  
+
   }
-      
+
 
   .container1 {
-   padding: 10px;
+    padding: 10px;
   }
-  
-   
-  
+
+
+
   .search-input {
-   display: none;
+    display: none;
   }
+
   .search-form {
     display: none;
   }
-  
-  
+
+
   .search-button {
     display: none;
-  } 
+  }
 
 
   .navbar-nav .nav-item .nav-link {
- font-size: small;
+    font-size: small;
   }
- 
+
 
   .logout {
-   font-size: small;
-  } 
-  .login{
     font-size: small;
   }
-   
+
+  .login {
+    font-size: small;
+  }
+
 
   .post-button {
-    
+
     font-size: small;
-    
-  
+
+
   }
+
+
+  .modal-content {
+
+    width: 380px;
+
+  }
+
 }

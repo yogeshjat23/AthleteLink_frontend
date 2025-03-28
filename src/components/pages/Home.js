@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="menu">
           <h3 className="logo"> 
-            AthleteLink
+            Athletink
           </h3>
           <div className="hamburger-menu" onClick={toggleNavbar}>
             <div className="bar"></div>
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
-        <h1 className="hero-title">AthleteLink</h1>
+        <h1 className="hero-title">Athletink</h1>
         <p className="hero-text">Hey Champs! Find players, build teams, and play.</p>
        
           

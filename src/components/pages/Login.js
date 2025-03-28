@@ -128,10 +128,6 @@ const Login = () => {
               required
             />
             <div className="options">
-              <div>
-                <input type="checkbox" id="remember" />
-                <label htmlFor="remember">Remember me</label>
-              </div>
               <a href="#">Forgot password</a>
             </div>
             <button className="sign-in-button" type="submit" disabled={loading}>

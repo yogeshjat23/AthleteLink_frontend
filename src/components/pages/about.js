@@ -53,7 +53,7 @@ const AboutMe = () => {
         <div className="mission-text">
           <h1 className="mission-title">Our Mission</h1>
           <p>
-            At <strong>AthleteLink</strong>, we aim to create a platform where sports
+            At <strong>Athletink</strong>, we aim to create a platform where sports
             enthusiasts can easily find players, form teams, and play together. Whether 
             you're looking for a casual game or a competitive match, we connect you with 
             the right people at the right time.
@@ -73,9 +73,9 @@ const AboutMe = () => {
       <div className="profile-card">
         <img src={profileImage} alt="Profile" className="profile-img" />
         <h2>Yogesh Jat</h2>
-        <p className="profile-role">Founder of AthleteLink</p>
+        <p className="profile-role">Founder of Athletink</p>
         <p>
-          Passionate about sports and technology, I built AthleteLink to make it 
+          Passionate about sports and technology, I built Athletink to make it 
           easier for people to connect and play together. Join us in creating a 
           more active and engaging sports community!
         </p> 

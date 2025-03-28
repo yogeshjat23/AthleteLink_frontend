@@ -131,7 +131,7 @@ return (
       </div>
   <div className ="filter-section-div" >
       <select className ="filter-section-div-section" name="ageRange" onChange={handleFilterChange} value={filters.ageRange}>
-        <option value="">Select Age Range</option> 
+        <option value="">Select Age</option> 
         <option value="10-17">10-17</option>
         <option value="18-25">18-25</option>
         <option value="26-30">26-30</option>

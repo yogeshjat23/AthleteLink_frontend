@@ -21,9 +21,9 @@ const AppRoutes = () => (
      <Route  path="/"  element = {  <StickyNavbar/> } />
      <Route path ="/login" element ={ <Login/>} /> 
      
-     <Route path = "/Join_page" element = {  <ProtectedRoute element ={<Join_page/>} /> } /> 
-     <Route  path ="/main" element= { <ProtectedRoute element ={<Main/>} /> } />  
-     <Route  path ="/chat" element ={<ProtectedRoute element ={<Chat/>} /> } />   
+     <Route path = "/Join_page"  element ={<Join_page/>} /> 
+     <Route  path ="/main" element ={<Main/>}  />  
+     <Route  path ="/chat"  element ={<Chat/>} />   
      <Route path ="/about" element ={ <About/>} />
          
   </Routes>

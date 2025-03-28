@@ -1,6 +1,6 @@
   .create-collection-container {
     width: 100%;
-
+  
 
   }
 
@@ -65,7 +65,7 @@
   .product-url-input {
     margin: 5px;
     width: calc(100% - 10px);
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #444;
     background-color: #222;

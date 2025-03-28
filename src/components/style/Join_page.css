@@ -1,14 +1,15 @@
 .temp {
 
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
+
 
 }
 
 /* Left Side - Game & Player Details */
 .left-container {
   width: 65%;
- 
+
   background-color: #A7D7C5;
 }
 
@@ -102,6 +103,7 @@
   background-color: #A7D7C5;
   color: #333;
   width: 100%;
+
 
 
 }
@@ -221,6 +223,7 @@
 
 
 
+
 }
 
 .player {
@@ -237,6 +240,8 @@
   height: 200px;
   width: 450px;
   margin-top: 5px;
+
+
 
 
 }
@@ -317,7 +322,13 @@
 
 @media (max-width:905px) {
 
+  .about-page {
+    
+    width: 420px;
 
+
+
+  }
 
 
   .left-container {
