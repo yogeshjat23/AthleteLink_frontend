@@ -42,7 +42,7 @@ const AboutPage = () => {
     try {
       if (remainingPlayers > 0) {
         const response = await axios.patch(
-          `http://localhost:5000/api/post/${post._id}/add-player`,
+          `https://athletink-bak.onrender.com/api/post/${post._id}/add-player`,
           playerData
         );
         alert(response.data.message);

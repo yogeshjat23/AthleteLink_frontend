@@ -20,7 +20,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/login", {
+      const response = await axios.post("https://athletink-bak.onrender.com/api/login", {
         email,
         password,
       });
@@ -47,7 +47,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/signup", {
+      const response = await axios.post("https://athletink-bak.onrender.com/api/signup", {
         email,
         password,
       });
@@ -68,7 +68,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/verify-otp", {
+      const response = await axios.post("https://athletink-bak.onrender.com/api/verify-otp", {
         email,
         otp,
       });
