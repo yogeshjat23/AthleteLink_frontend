@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AthleteLink_frontend/static/css/main.2189a566.css",
-    "main.js": "/AthleteLink_frontend/static/js/main.839b7181.js",
+    "main.css": "/AthleteLink_frontend/static/css/main.70471959.css",
+    "main.js": "/AthleteLink_frontend/static/js/main.c9189110.js",
     "static/js/952.9e8c73d7.chunk.js": "/AthleteLink_frontend/static/js/952.9e8c73d7.chunk.js",
     "static/media/c392ba101244345.5f1a2d7ad1371.jpg": "/AthleteLink_frontend/static/media/c392ba101244345.5f1a2d7ad1371.99e57f5a5576b954103f.jpg",
     "static/media/progile.jpg": "/AthleteLink_frontend/static/media/progile.d2a5f238c476abed06d1.jpg",
@@ -17,12 +17,12 @@
     "static/media/5.webp": "/AthleteLink_frontend/static/media/5.c124a5148416ba900d53.webp",
     "static/media/7123025_logo_google_g_icon.svg": "/AthleteLink_frontend/static/media/7123025_logo_google_g_icon.efa560d32653a615a1db742bbf78c815.svg",
     "index.html": "/AthleteLink_frontend/index.html",
-    "main.2189a566.css.map": "/AthleteLink_frontend/static/css/main.2189a566.css.map",
-    "main.839b7181.js.map": "/AthleteLink_frontend/static/js/main.839b7181.js.map",
+    "main.70471959.css.map": "/AthleteLink_frontend/static/css/main.70471959.css.map",
+    "main.c9189110.js.map": "/AthleteLink_frontend/static/js/main.c9189110.js.map",
     "952.9e8c73d7.chunk.js.map": "/AthleteLink_frontend/static/js/952.9e8c73d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2189a566.css",
-    "static/js/main.839b7181.js"
+    "static/css/main.70471959.css",
+    "static/js/main.c9189110.js"
   ]
 }
