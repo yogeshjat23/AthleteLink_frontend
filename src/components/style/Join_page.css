@@ -1,0 +1,368 @@
+.temp {
+
+  flex-direction: row;
+  justify-content: space-between; 
+
+}
+
+/* Left Side - Game & Player Details */
+.left-container {
+  width: 65%;
+ 
+  background-color: #A7D7C5;
+}
+
+/* Chat Box on Right Side */
+.right-container {
+  width: 30%;
+  position: fixed;
+  right: 20px;
+  top: 106px;
+  background: white;
+  border-radius: 8px;
+  height: 80vh;
+  overflow-y: auto;
+
+}
+
+
+
+.container1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;
+  text-decoration: none;
+
+}
+
+.Logo {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+
+
+}
+
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  color: #343a40;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-nav .nav-item .nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+}
+
+
+.about-page {
+  margin-top: 110px;
+  font-family: Arial, sans-serif;
+  padding-left: 10px;
+
+  background-color: #A7D7C5;
+  color: #333;
+  width: 100%;
+
+
+}
+
+.about-page h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.about-page h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.about-page p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Team details container */
+.about-page .team-details-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Button styles */
+.about-page button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+
+.about-page button:hover {
+  background-color: #0056b3;
+}
+
+.about-page button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+
+
+.about-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page input,
+.about-page select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.about-page input:focus,
+.about-page select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.about-page .submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about-page .submit-button:hover {
+  background-color: #3e8e41;
+}
+
+.game-detail {
+  width: 69%;
+  align-items: center;
+  text-align: center;
+  background: -webkit-linear-gradient(100deg, #eaf8e6, rgb(48, 160, 48));
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  font-family: Arial, sans-serif;
+  margin-top: 5px;
+
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 5px;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #A7D7C5;
+  margin-top: 10px;
+  margin-left: 50px;
+
+
+
+}
+
+.player {
+  background: -webkit-linear-gradient(100deg, #eaf8e6, rgb(48, 160, 48));
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  height: 200px;
+  width: 450px;
+  margin-top: 5px;
+
+
+}
+
+.sport-icon {
+  flex-shrink: 0;
+  width: 150px;
+
+}
+
+.img-con {
+  flex-shrink: 0;
+  width: 150px;
+
+
+
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  background-color: #fff;
+
+}
+
+
+@media (max-width:1200px) {
+
+
+
+
+  .left-container {
+    width: 100%;
+  }
+
+  /* Chat Box on Right Side */
+  .right-container {
+    width: 100%;
+    position: relative;
+    right: 0px;
+    top: 0px;
+
+    height: 80vh;
+    overflow-y: auto;
+
+  }
+
+
+  .game-detail {
+    width: 100%;
+
+
+  }
+
+  .players {
+
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+
+  .player {
+
+
+    height: 200px;
+    margin-top: 5px;
+
+
+  }
+
+
+
+
+
+
+}
+
+@media (max-width:905px) {
+
+
+
+
+  .left-container {
+    width: 100%;
+  }
+
+  /* Chat Box on Right Side */
+  .right-container {
+    width: 100%;
+    position: relative;
+    right: 0px;
+    top: 0px;
+
+    height: 80vh;
+    overflow-y: auto;
+
+  }
+
+
+  .game-detail {
+    width: 98%;
+
+
+  }
+
+  .players {
+
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+
+  .player {
+
+
+    height: 200px;
+    width: 410px;
+    margin-top: 5px;
+
+
+  }
+
+
+
+
+
+
+}

@@ -1,0 +1,171 @@
+.container3{
+  position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1e1e1e;
+    color: white;
+  
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+
+    z-index: 1000; 
+   
+} 
+.logout {
+  background-color: rgb(227, 91, 91);
+} 
+.login{
+  background-color: lightgreen;
+}
+  
+.nav-link { 
+  margin-left: 40px; ;
+  margin-right: 40px;
+
+} 
+.nav-item button {
+   border-radius: 5px;
+} 
+
+.nav-item button:hover {
+  transform: scale(1.1);
+}
+.about-container {
+ width: 100%;
+  margin: auto;
+  padding: 20px; 
+  margin-top: 60px; 
+  background: black; 
+   
+}
+
+/* Mission Section */
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.mission-text {
+  flex: 1;
+  text-align: left; 
+ 
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  color: #ff7b00;
+  margin-bottom: 10px;
+}
+
+.mission-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.mission-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;  
+  height: 300px; 
+  width: 400px;
+
+
+}
+
+.mission-image img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Profile Card */
+.profile-card { 
+
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: auto; 
+  padding-top: 50px; 
+  color: white;
+} 
+.profile-card h2{
+  color: white;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-role {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 10px; 
+  margin-top: 50px; 
+
+}
+  
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+} 
+
+@media (max-width: 600px) { 
+  .mission-image {
+   display: none;
+    height: 100px; 
+
+  
+  } 
+  .container3{
+    position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1e1e1e;
+      color: white;
+    
+      justify-content: space-between;
+      padding: 15px 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  
+      z-index: 1000; 
+     
+  } 
+  .nav-link { 
+    margin-left: 10px; ;
+    margin-right: 10px;
+  
+  } 
+ 
+  
+}
