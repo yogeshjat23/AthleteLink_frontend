@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../style/Login.css";
-import googleLogo from "../assets/7123025_logo_google_g_icon.svg";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 
