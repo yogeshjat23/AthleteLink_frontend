@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from 'react-router-dom';
    import "../style/Nav.css" ;  
@@ -73,36 +74,45 @@ return (
         {/* end */}
 
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a href="/" className="nav-link">
-              Home
-            </a>
-        
-            <a href="/main" className="nav-link">
-              Find
-            </a>
-          
-           
-            <a href="/about" className="nav-link">
-              About
-            </a> 
-            {isAuthenticated?( 
-                          <button  className="logout"  href="#"
-                          onClick={(e) => {
-                            e.preventDefault(); 
-                            logout(); 
-                          }} >Logout</button>  
-                    ): ( 
-                        <button className="login"   onClick={
-                            ()=>{ 
-                                navigate('/login');
-
-                            }
-                        }  
-                      >Login</button>  
-                    ) } 
-          </li>
-        </ul>
+      <li className="nav-item">
+        <Link className="nav-link" to="/" >
+          Home
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/main" >
+          Find
+        </Link>
+      </li>
+      <li  className="nav-item">
+        <Link className="nav-link" to="/about" >
+          About
+        </Link>
+      </li>
+      
+      {isAuthenticated ? (
+        <li className="nav-item">
+          <button
+            className="logout"
+            onClick={(e) => {
+              e.preventDefault();
+              logout();
+            }}
+          >
+            Logout
+          </button>
+        </li>
+      ) : (
+        <li className="nav-item">
+          <button
+            className="login"
+            onClick={() => navigate('/login')}
+          >
+            Login
+          </button>
+        </li>
+      )}
+    </ul>
       </div>
     </div>
     

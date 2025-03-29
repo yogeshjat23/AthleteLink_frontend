@@ -1,4 +1,5 @@
 import React from "react"  ; 
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from 'react-router-dom';
 import '../style/About.css'  ; 
@@ -18,33 +19,55 @@ const AboutMe = () => {
               <div className="navbar-collapse">
                 <a href="/" className="navbar-brand">
                   <img src={Logo} className="Logo" alt="Logo" />
-                </a>
+                </a>     
+
                 <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a href="/" className="nav-link">Home</a> 
-                    <a href="/main" className="nav-link">Find</a> 
-                    <a href="/about" className="nav-link">About</a>  
+      <li className="nav-item">
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+      </li>
+      
+      <li className="nav-item">
+        <Link to="/main" className="nav-link">
+          Find
+        </Link>
+      </li>
+      
+      <li className="nav-item">
+        <Link to="/about" className="nav-link">
+          About
+        </Link>
+      </li>
 
-                    {isAuthenticated?( 
-                          <button  className="logout"  href="#"
-                          onClick={(e) => {
-                            e.preventDefault(); 
-                            logout(); 
-                          }} >Logout</button>  
-                    ): ( 
-                        <button className="login"   onClick={
-                            ()=>{ 
-                                navigate('/login');
+      {isAuthenticated ? (
+        <li className="nav-item">
+          <button
+            className="logout"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default behavior
+              logout(); // Call the logout function
+            }}
+          >
+            Logout
+          </button>
+        </li>
+      ) : (
+        <li className="nav-item">
+          <button
+            className="login"
+            onClick={() => {
+              navigate('/login');
+            }}
+          >
+            Login
+          </button>
+        </li>
+      )}
+    </ul>
 
-                            }
-                        }  
-                      >Login</button>  
-                    ) } 
-                  
 
-                      
-                  </li>
-                </ul>
+
               </div>
             </div>
             <div className="about-container">

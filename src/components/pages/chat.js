@@ -1,6 +1,5 @@
 
 import { useEffect, useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import { supabase } from "../context/supbaseClient";
 import "../style/Chat.css"; 
 
@@ -9,20 +8,17 @@ function Chat({ teamId, teamMembers }) {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   const chatContainerRef = useRef(null);
-  const navigate = useNavigate();
 
   // Get current user session and handle OAuth callback
   useEffect(() => {
     const getSession = async () => {
-      const { data: { session }, error } = await supabase.auth.getSession();
-      if (error) console.error("Session fetch error:", error);
+      const { data: { session } } = await supabase.auth.getSession();
       setSession(session);
     };
-
+    
     getSession();
 
     const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
-      console.log("Auth state changed:", session);
       setSession(session);
     });
 
@@ -30,13 +26,6 @@ function Chat({ teamId, teamMembers }) {
       authListener?.subscription?.unsubscribe();
     };
   }, []);
-
-  // Redirect to chat page if logged in
-  useEffect(() => {
-    if (session) {
-      navigate("/chat");
-    }
-  }, [session, navigate]);
 
   // Fetch messages and setup real-time updates
   useEffect(() => {
@@ -121,12 +110,12 @@ function Chat({ teamId, teamMembers }) {
     }
   }, [messages]);
 
-  // Handle OAuth sign-in with redirect to chat page
+  // Handle OAuth sign-in with correct redirect
   const signIn = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/chat`, // Ensures redirection to chat
+        redirectTo: window.location.origin, // Ensures redirection to your app
       },
     });
 

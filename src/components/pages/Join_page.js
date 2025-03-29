@@ -96,31 +96,49 @@ const AboutPage = () => {
                        <img src={Logo} className="Logo" alt="Logo" />
                      </a>
                      <ul className="navbar-nav">
-                       <li className="nav-item">
-                         <a href="/" className="nav-link">Home</a> 
-                         <a href="/main" className="nav-link">Find</a> 
-                         <a href="/about" className="nav-link">About</a>  
-     
-                         {isAuthenticated?( 
-                               <button  className="logout"  href="#"
-                               onClick={(e) => {
-                                 e.preventDefault(); 
-                                 logout(); 
-                               }} >Logout</button>  
-                         ): ( 
-                             <button className="login"   onClick={
-                                 ()=>{ 
-                                     navigate('/login');
-     
-                                 }
-                             }  
-                           >Login</button>  
-                         ) } 
-                       
-     
-                           
-                       </li>
-                     </ul>
+      <li className="nav-item">
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+      </li>
+      
+      <li className="nav-item">
+        <Link to="/main" className="nav-link">
+          Find
+        </Link>
+      </li>
+      
+      <li className="nav-item">
+        <Link to="/about" className="nav-link">
+          About
+        </Link>
+      </li>
+
+      {isAuthenticated ? (
+        <li className="nav-item">
+          <button
+            className="logout"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default behavior
+              logout(); // Call the logout function
+            }}
+          >
+            Logout
+          </button>
+        </li>
+      ) : (
+        <li className="nav-item">
+          <button
+            className="login"
+            onClick={() => {
+              navigate('/login');
+            }}
+          >
+            Login
+          </button>
+        </li>
+      )}
+    </ul>
                    </div>
                  </div>  
 
