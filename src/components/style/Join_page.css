@@ -14,7 +14,7 @@
 }
 
 /* Chat Box on Right Side */
-.right-container {
+/*.right-container {
   width: 30%;
   position: fixed;
   right: 20px;
@@ -24,6 +24,21 @@
   height: 80vh;
   overflow-y: auto;
 
+}*/
+.right-container {
+  width: 30%;
+  position: fixed;
+  right: 20px;
+  top: 106px;
+  background: white;
+  border-radius: 8px;
+  height: auto;
+  /* Makes the container height adjust based on its content */
+  max-height: 80vh;
+  /* Prevents it from getting too tall */
+  overflow-y: auto;
+  z-index: 1;
+  /* Ensures it doesn't cover other elements */
 }
 
 
@@ -323,7 +338,7 @@
 @media (max-width:905px) {
 
   .about-page {
-    
+
     width: 420px;
 
 
