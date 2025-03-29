@@ -1,7 +1,7 @@
 import React, { useState } from "react"; 
 import { useAuth } from "../context/AuthContext";
 import axios from "axios";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate , Link} from "react-router-dom";
 import CreateCollection from "./join";
 import Logo from "../assets/logo.webp";
 
