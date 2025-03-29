@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c10d446f.css",
+    "main.js": "/static/js/main.0ccb0914.js",
+    "static/js/952.9e8c73d7.chunk.js": "/static/js/952.9e8c73d7.chunk.js",
+    "static/media/c392ba101244345.5f1a2d7ad1371.jpg": "/static/media/c392ba101244345.5f1a2d7ad1371.99e57f5a5576b954103f.jpg",
+    "static/media/progile.jpg": "/static/media/progile.d2a5f238c476abed06d1.jpg",
+    "static/media/1000_F_513761212_i3z6vHUNV0bQ8pjkBGO3yrpLg8zs4mFK.jpg": "/static/media/1000_F_513761212_i3z6vHUNV0bQ8pjkBGO3yrpLg8zs4mFK.32c4bfdb50ae20498fe1.jpg",
+    "static/media/logo.webp": "/static/media/logo.a6425da27f0b047ce7c7.webp",
+    "static/media/123.jpg": "/static/media/123.c2f12be4f5d786a475e8.jpg",
+    "static/media/1.jpg": "/static/media/1.f77323b1ba6ee62c0e53.jpg",
+    "static/media/1111.jpg": "/static/media/1111.7432b0ab6be5e341cc71.jpg",
+    "static/media/kabaddi.jpeg": "/static/media/kabaddi.14ad3a0449d3d7fed634.jpeg",
+    "static/media/4.jpeg": "/static/media/4.3d2fb9e1305215d306dc.jpeg",
+    "static/media/volleyball.png": "/static/media/volleyball.a058f860bb17c24e4d88.png",
+    "static/media/badminton.jpeg": "/static/media/badminton.2b4dc8313f6f6eef700b.jpeg",
+    "static/media/5.webp": "/static/media/5.c124a5148416ba900d53.webp",
+    "index.html": "/index.html",
+    "main.c10d446f.css.map": "/static/css/main.c10d446f.css.map",
+    "main.0ccb0914.js.map": "/static/js/main.0ccb0914.js.map",
+    "952.9e8c73d7.chunk.js.map": "/static/js/952.9e8c73d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c10d446f.css",
+    "static/js/main.0ccb0914.js"
+  ]
+}
