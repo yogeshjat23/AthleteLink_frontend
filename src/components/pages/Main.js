@@ -19,7 +19,7 @@ import '../style/Main.css';
 
 const DealsPage = () => {
 
-     const backend =    "http://localhost:5000"
+     const backend =    "https://athletink-bak.onrender.com"
   const [categories, setCategories] = useState([
     { name: "Football", logo: photo },
     { name: "Basketball", logo: photo1 },

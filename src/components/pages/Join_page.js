@@ -21,7 +21,7 @@ import kabaddi from  '../assets/kabaddi.jpeg'
 
 
 const AboutPage = () => { 
-    const backend =    "http://localhost:5000"
+    const backend =    "https://athletink-bak.onrender.com"
 
   const { isAuthenticated, logout } = useAuth();  
   const location = useLocation();

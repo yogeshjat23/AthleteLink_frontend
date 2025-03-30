@@ -13,7 +13,7 @@ const [lng , setLng] = useState() ;
 const [team_name, setTeam_name] = useState() ;
 const [player_need, setPlayer_need] = useState("");
 const [ error ,setError] = useState(null); 
-const backend  =  "http://localhost:5000" ;
+const backend  =  "https://athletink-bak.onrender.com" ;
 
 
 useEffect(() => {
