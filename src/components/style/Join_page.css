@@ -295,7 +295,7 @@
   /* Chat Box on Right Side */
   .right-container {
     width: 100%;
-    position: relative;
+    position: static;
     right: 0px;
     top: 0px;
 
