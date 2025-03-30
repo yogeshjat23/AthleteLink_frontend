@@ -97,19 +97,19 @@ const AboutPage = () => {
                        <img src={Logo} className="Logo" alt="Logo" />
                      </a>
                      <ul className="navbar-nav">
-      <li className="nav-item">
+      <li className="navitem">
         <Link to="/" className="nav-link">
           Home
         </Link>
       </li>
       
-      <li className="nav-item">
+      <li className="navitem">
         <Link to="/main" className="nav-link">
           Find
         </Link>
       </li>
       
-      <li className="nav-item">
+      <li className="navitem">
         <Link to="/about" className="nav-link">
           About
         </Link>
