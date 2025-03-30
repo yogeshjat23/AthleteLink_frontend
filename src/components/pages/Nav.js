@@ -74,17 +74,17 @@ return (
         {/* end */}
 
         <ul className="navbar-nav">
-      <li className="nav-item">
+      <li className="navitem">
         <Link className="nav-link" to="/" >
           Home
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="navitem">
         <Link className="nav-link" to="/main" >
           Find
         </Link>
       </li>
-      <li  className="nav-item">
+      <li  className="navitem">
         <Link className="nav-link" to="/about" >
           About
         </Link>

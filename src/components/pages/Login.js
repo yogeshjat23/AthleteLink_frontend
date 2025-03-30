@@ -3,7 +3,8 @@ import "../style/Login.css";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 
-const Login = () => {
+const Login = () => { 
+  const backend =    "http://localhost:5000"
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +20,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://athletink-bak.onrender.com/api/login", {
+      const response = await axios.post(`${backend}/api/login`, {
         email,
         password,
       });
@@ -46,7 +47,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://athletink-bak.onrender.com/api/signup", {
+      const response = await axios.post(`${backend}/api/signup`, {
         email,
         password,
       });
@@ -67,7 +68,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://athletink-bak.onrender.com/api/verify-otp", {
+      const response = await axios.post(`${backend}/api/verify-otp`, {
         email,
         otp,
       });

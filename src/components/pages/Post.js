@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from "react";
 import "../style/Post.css";
-import avatar from '../assets/5.webp' ;
+import avatar from '../assets/5.webp' ; 
 const CreateCollection = ({ onClose }) => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -12,7 +12,8 @@ const [lat , setLat] =useState() ;
 const [lng , setLng] = useState() ; 
 const [team_name, setTeam_name] = useState() ;
 const [player_need, setPlayer_need] = useState("");
-const [ error ,setError] = useState(null);
+const [ error ,setError] = useState(null); 
+const backend  =  "http://localhost:5000" ;
 
 
 useEffect(() => {
@@ -58,7 +59,7 @@ useEffect(() => {
   }
   setError(null);
     try {
-        const response = await fetch("https://athletink-bak.onrender.com/api/post", {
+        const response = await fetch(`${backend}/api/post`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -21,6 +21,7 @@ import kabaddi from  '../assets/kabaddi.jpeg'
 
 
 const AboutPage = () => { 
+    const backend =    "http://localhost:5000"
 
   const { isAuthenticated, logout } = useAuth();  
   const location = useLocation();
@@ -42,7 +43,7 @@ const AboutPage = () => {
     try {
       if (remainingPlayers > 0) {
         const response = await axios.patch(
-          `https://athletink-bak.onrender.com/api/post/${post._id}/add-player`,
+          `${backend}/api/post/${post._id}/add-player`,
           playerData
         );
         alert(response.data.message);

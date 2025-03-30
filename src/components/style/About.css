@@ -1,43 +1,57 @@
-.container3{
+.container3 {
   position: fixed;
-    top: 0;
-    width: 100%;
-    background: #1e1e1e;
-    color: white;
-  
-    justify-content: space-between;
-    padding: 15px 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  top: 0;
+  width: 100%;
+  background: #1e1e1e;
+  color: white;
 
-    z-index: 1000; 
-   
-} 
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  z-index: 1000;
+
+
+}
+
 .logout {
   background-color: rgb(227, 91, 91);
-} 
-.login{
+}
+
+.login {
   background-color: lightgreen;
 }
-  
-.nav-link { 
-  margin-left: 40px; ;
-  margin-right: 40px;
 
-} 
-.nav-item button {
-   border-radius: 5px;
-} 
+.nav-link {
+  margin-left: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  color: white;
+  
+
+}
+
+.navbar-nav .navitem{
+  margin-top: 20px;
+
+}
+
+  .nav-item button {
+  border-radius: 5px;
+}
 
 .nav-item button:hover {
   transform: scale(1.1);
 }
+
 .about-container {
- width: 100%;
+  width: 100%;
   margin: auto;
-  padding: 20px; 
-  margin-top: 60px; 
-  background: black; 
-   
+  padding: 20px;
+  margin-top: 60px;
+  background: black;
+
+
 }
 
 /* Mission Section */
@@ -52,8 +66,8 @@
 
 .mission-text {
   flex: 1;
-  text-align: left; 
- 
+  text-align: left;
+
 }
 
 .mission-title {
@@ -71,8 +85,8 @@
 .mission-image {
   flex: 1;
   display: flex;
-  justify-content: center;  
-  height: 300px; 
+  justify-content: center;
+  height: 300px;
   width: 400px;
 
 
@@ -85,7 +99,7 @@
 }
 
 /* Profile Card */
-.profile-card { 
+.profile-card {
 
   background: #1e1e1e;
   padding: 20px;
@@ -93,11 +107,12 @@
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   text-align: center;
   max-width: 600px;
-  margin: auto; 
-  padding-top: 50px; 
+  margin: auto;
+  padding-top: 50px;
   color: white;
-} 
-.profile-card h2{
+}
+
+.profile-card h2 {
   color: white;
 }
 
@@ -111,11 +126,11 @@
 .profile-role {
   font-size: 1.2rem;
   color: #bbb;
-  margin-bottom: 10px; 
-  margin-top: 50px; 
+  margin-bottom: 10px;
+  margin-top: 50px;
 
 }
-  
+
 .social-links {
   margin-top: 15px;
   display: flex;
@@ -138,34 +153,37 @@
 
 .social-icon:hover {
   transform: scale(1.2);
-} 
+}
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
   .mission-image {
-   display: none;
-    height: 100px; 
+    display: none;
+    height: 100px;
 
-  
-  } 
-  .container3{
+
+  }
+
+  .container3 {
     position: fixed;
-      top: 0;
-      width: 100%;
-      background: #1e1e1e;
-      color: white;
-    
-      justify-content: space-between;
-      padding: 15px 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-  
-      z-index: 1000; 
-     
-  } 
-  .nav-link { 
-    margin-left: 10px; ;
+    top: 0;
+    width: 100%;
+    background: #1e1e1e;
+    color: white;
+
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    z-index: 1000;
+
+  }
+
+  .nav-link {
+    margin-left: 10px;
+    ;
     margin-right: 10px;
-  
-  } 
- 
-  
+
+  }
+
+
 }

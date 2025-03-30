@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Nav from './Nav';
 import usermale from '../assets/usermale.jpeg';
 import userfemale from '../assets/userfemale.jpeg';
@@ -18,8 +18,8 @@ import kabaddi from  '../assets/kabaddi.jpeg'
 import '../style/Main.css';
 
 const DealsPage = () => {
-  const navigate = useNavigate();
-  
+
+     const backend =    "http://localhost:5000"
   const [categories, setCategories] = useState([
     { name: "Football", logo: photo },
     { name: "Basketball", logo: photo1 },
@@ -45,7 +45,7 @@ const DealsPage = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch("https://athletink-bak.onrender.com/api/posts");
+      const response = await fetch(`${backend}/api/posts`);
       if (response.ok) {
         const data = await response.json();
         setPosts(data);

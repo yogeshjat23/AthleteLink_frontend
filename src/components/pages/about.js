@@ -21,19 +21,19 @@ const AboutMe = () => {
                 </a>     
 
                 <ul className="navbar-nav">
-      <li className="nav-item">
+      <li className="navitem">
         <Link to="/" className="nav-link">
           Home
         </Link>
       </li>
       
-      <li className="nav-item">
+      <li className="navitem">
         <Link to="/main" className="nav-link">
           Find
         </Link>
       </li>
       
-      <li className="nav-item">
+      <li className="navitem">
         <Link to="/about" className="nav-link">
           About
         </Link>
@@ -41,7 +41,7 @@ const AboutMe = () => {
 
       {isAuthenticated ? (
         <li className="nav-item">
-          <button
+          <button 
             className="logout"
             onClick={(e) => {
               e.preventDefault(); // Prevent default behavior

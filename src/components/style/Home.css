@@ -342,7 +342,7 @@ header {
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
 
 }
 
@@ -358,7 +358,7 @@ ul {
   transition: 0.3s;
   opacity: 0;
   transform: translateY(10px);
-  animation: hide 0.5s forwards ease; 
+  animation: hide 0.5s forwards ease;
   padding: 40px;
 }
 
@@ -474,7 +474,6 @@ ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 30px;
     width: 100%;
   }
 
@@ -545,9 +544,7 @@ ul {
 
   .contect_contaner {
 
-    margin-top: 10px;
-    padding-top: 10px;
-    width: 100%;
+    display: none;
 
 
   }
@@ -571,9 +568,9 @@ ul {
 
 
 
- 
 
- 
+
+
 
 
   .links {
@@ -586,20 +583,21 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-  padding-bottom:600px;  
-  padding-right: 200px;
- 
-}
+    padding-bottom: 600px;
+    padding-right: 200px;
+    padding-top: 65px;
 
-.links ul {
+  }
+
+  .links ul {
     list-style: none;
     display: flex;
     gap: 15px;
-    padding: 0;
+    padding-top: 0;
     margin: 0;
-}
+  }
 
-.links a {
+  .links a {
     text-decoration: none;
     color: #eee;
     padding: 0.7rem;
@@ -611,7 +609,7 @@ ul {
     opacity: 0;
     transform: translateY(10px);
     animation: hide 0.5s forwards ease;
-}
+  }
 
 
 }
